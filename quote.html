@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Get a Quote | Media Buy Trio</title>
+<meta name="description" content="Tell us about your brand and goals. We'll respond within 24 hours.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<nav class="main-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">MB<span class="logo-accent">T</span></a>
+    <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="results.html">Results</a></li><li><a href="process.html">Process</a></li><li><a href="brands.html">Brands</a></li></ul>
+    <a href="quote.html" class="nav-cta">Get a Quote</a>
+    <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu"><a href="index.html">Home</a><a href="services.html">Services</a><a href="results.html">Results</a><a href="process.html">Process</a><a href="brands.html">Brands</a><a href="quote.html" class="mob-cta">Get a Quote</a></div>
+<div class="page-body">
+
+<div class="page-hero"><div class="page-hero-glow"></div><div class="page-hero-inner">
+  <div class="page-breadcrumb"><a href="index.html">Home</a> / Get a Quote</div>
+  <h1 class="page-title fade-up">Let's Build Your<br><span class="accent">Growth Plan</span></h1>
+  <p class="page-desc fade-up">Tell us about your brand and goals. We'll respond within 24 hours with a tailored proposal and strategy.</p>
+</div></div>
+<section class="section"><div class="section-inner" style="max-width:760px">
+  <form class="quote-form fade-up" novalidate style="display:grid;gap:1.25rem;background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:2.25rem">
+
+    <!-- Honeypot: hidden from humans, bots will fill it -->
+    <input name="website" type="text" style="display:none;visibility:hidden;position:absolute" tabindex="-1" autocomplete="off">
+
+    <div class="field-wrap">
+      <label for="f-name">Name <span style="color:#e53e3e">*</span></label>
+      <input id="f-name" name="name" type="text" maxlength="100" autocomplete="name"
+             placeholder="Jane Smith" class="name-input" required>
+      <span class="field-error" id="err-name"></span>
+    </div>
+
+    <div class="field-wrap">
+      <label for="f-email">Email <span style="color:#e53e3e">*</span></label>
+      <input id="f-email" name="email" type="email" maxlength="254" autocomplete="email"
+             placeholder="jane@yourbrand.com" required>
+      <span class="field-error" id="err-email"></span>
+    </div>
+
+    <div class="field-wrap">
+      <label for="f-brand">Brand / Website</label>
+      <input id="f-brand" name="brand" type="text" maxlength="200"
+             placeholder="mybrand.com">
+      <span class="field-error" id="err-brand"></span>
+    </div>
+
+    <div class="field-wrap">
+      <label for="f-budget">Monthly Ad Budget</label>
+      <select id="f-budget" name="budget">
+        <option value="">— Select a range —</option>
+        <option>Under $5K</option>
+        <option>$5K – $20K</option>
+        <option>$20K – $50K</option>
+        <option>$50K+</option>
+      </select>
+      <span class="field-error" id="err-budget"></span>
+    </div>
+
+    <div class="field-wrap">
+      <label for="f-msg">Tell us about your goals</label>
+      <textarea id="f-msg" name="msg" rows="5" maxlength="2000"
+                placeholder="What are you selling? What's your current challenge? What does success look like?"></textarea>
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="field-error" id="err-msg"></span>
+        <span class="char-count" id="cnt-msg">0 / 2000</span>
+      </div>
+    </div>
+
+    <button type="submit" class="btn-main" style="justify-self:start">Send Request →</button>
+    <div style="font-size:13px;color:var(--muted)">Or email us directly: <a href="mailto:mediabuytrio@gmail.com" style="color:var(--orange);font-weight:700">mediabuytrio@gmail.com</a></div>
+  </form>
+</div></section>
+
+</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col footer-brand">
+      <a href="index.html" class="nav-logo">MEDIA BUY <span class="logo-accent">TRIO</span></a>
+      <p>Performance marketing that moves the needle. We buy media. You get results — across Meta, Google, TikTok, Snapchat, Pinterest and email.</p>
+    </div>
+    <div class="footer-col"><h4>Company</h4>
+      <a href="services.html">Services</a><a href="process.html">Process</a><a href="results.html">Results</a><a href="brands.html">Brands</a>
+    </div>
+    <div class="footer-col"><h4>Services</h4>
+      <a href="quote.html">Meta Ads</a><a href="quote.html">Google Ads</a><a href="quote.html">TikTok Ads</a><a href="quote.html">Email Marketing</a>
+    </div>
+    <div class="footer-col"><h4>Get in Touch</h4>
+      <a href="mailto:mediabuytrio@gmail.com">mediabuytrio@gmail.com</a>
+      <a href="https://www.instagram.com/mediabuytrio_" target="_blank" rel="noreferrer">Instagram</a>
+      <a href="https://facebook.com/mediabuytrio" target="_blank" rel="noreferrer">Facebook</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 Media Buy Trio · All rights reserved.</div>
+    <div class="footer-bottom-links"><a href="quote.html">Contact</a><a href="#">Privacy</a></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
