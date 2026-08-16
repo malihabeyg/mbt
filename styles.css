@@ -380,3 +380,28 @@ h2.section-title .accent,.case-title .accent,.step-num{background-size:200% 100%
 .char-count.warn{color:#e6a817}
 .char-count.over{color:#e53e3e;font-weight:700}
 .field-wrap input[type="text"].name-input{text-transform:capitalize}
+
+/* ── Added: Process/How-we-start section (used on quote/contact page) ── */
+.wrap{max-width:1240px;margin:0 auto;position:relative}
+.section-pad{padding:90px 5%}
+.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap;max-width:1240px;margin:0 auto 3rem}
+.section-eyebrow{font-family:var(--font-head);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--orange);margin-bottom:.75rem;display:inline-flex;align-items:center;gap:.6rem}
+.section-eyebrow::before{content:'';width:24px;height:2px;background:var(--orange);display:inline-block}
+.section-desc{font-size:1rem;color:var(--muted);max-width:340px;line-height:1.7}
+.process-grid{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.process-step{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:2rem;transition:all .3s}
+.process-step:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(20,10,60,.08);border-color:transparent}
+.process-step h4{font-family:var(--font-head);font-size:1.1rem;font-weight:800;color:var(--ink);margin-bottom:.6rem;letter-spacing:-.3px}
+.process-step p{font-size:14px;color:var(--muted);line-height:1.7}
+@media(max-width:960px){.process-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:660px){.process-grid{grid-template-columns:1fr}.section-head{align-items:flex-start}}
+
+/* ── Added: Brands marquee section (brands.html "Brands we've worked with") ── */
+.brands-section{padding:70px 5%;background:#fff;text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.brands-label{font-family:var(--font-head);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--orange);margin-bottom:1.75rem}
+.brands-section .marquee{overflow:hidden;border:none;padding:0;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);display:flex;gap:3rem;animation:ticker 28s linear infinite;white-space:nowrap;width:max-content}
+.brands-section .marquee span{font-family:var(--font-head);font-size:1.5rem;font-weight:800;color:var(--ink);opacity:.5;flex-shrink:0;transition:opacity .3s,color .3s;display:inline-block}
+.brands-section .marquee span:hover{opacity:1;color:var(--purple)}
+
+/* ── Added: running brand ticker (reuses site marquee styling, brand names) ── */
+.brands-marquee .marquee-item span:not(.sep){opacity:.9}
